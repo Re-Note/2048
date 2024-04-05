@@ -1,0 +1,96 @@
+.container {
+    text-align: center;
+}
+
+#grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 450px; /* 각 타일 너비(110px * 4 + 5px * 5) */
+    border: 2px solid #BBADA0;
+    background-color: #BBADA0;
+    padding: 5px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    font-size: 36px;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+    background-color: #CDC1B4;
+    color: transparent;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.new-tile {
+    animation: slideIn 0.3s ease forwards;
+}
+
+
+.number-2 {
+    background-color: #EEE4DA;
+    color: #776E65;
+}
+
+.number-4 {
+    background-color: #EDE0C8;
+    color: #776E65;
+}
+
+.number-8 {
+    background-color: #F2B179;
+    color: #FFFFFF;
+}
+
+.number-16 {
+    background-color: #F59563;
+    color: #FFFFFF;
+}
+
+.number-32 {
+    background-color: #F67C5F;
+    color: #FFFFFF;
+}
+
+.number-64 {
+    background-color: #F65E3B;
+    color: #FFFFFF;
+}
+
+.number-128 {
+    background-color: #EDCF72;
+    color: #FFFFFF;
+}
+
+.number-256 {
+    background-color: #EDCC61;
+    color: #FFFFFF;
+}
+
+.number-512 {
+    background-color: #EDC850;
+    color: #FFFFFF;
+}
+
+.number-1024 {
+    background-color: #EDC53F;
+    color: #FFFFFF;
+}
+
+.number-2048 {
+    background-color: #EDC22E;
+    color: #FFFFFF;
+}
